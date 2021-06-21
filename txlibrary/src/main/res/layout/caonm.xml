@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="150dp"
+    android:background="@drawable/img_live_panel"
+    android:orientation="vertical" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+    <TextView
+        android:id="@+id/weiBoTv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="微博"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14" />
+
+    <TextView
+        android:id="@+id/weiXinTv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="微信"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14" />
+
+    <TextView
+        android:id="@+id/circleOfFriendsTv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="朋友圈"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14" />
+
+    <TextView
+        android:id="@+id/qqTv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="QQ"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14" />
+
+    <TextView
+        android:id="@+id/qzoneTv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="QQ空间"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14" />
+
+
+
+
+</LinearLayout>

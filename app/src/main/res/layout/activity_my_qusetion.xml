@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/background">
+    <com.whcd.base.widget.TopMenuBar
+        android:id="@+id/topMenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.whcd.base.widget.PageListView
+        android:background="@color/white_s"
+        android:id="@+id/questionListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/background"
+        android:dividerHeight="@dimen/magin"
+        android:footerDividersEnabled="false"
+        android:scrollbars="none">
+    </com.whcd.base.widget.PageListView>
+</LinearLayout>

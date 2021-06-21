@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\workByme\workYstv\androidbase\src\main\assets"><file name="so.zip" path="D:\workByme\workYstv\androidbase\src\main\assets\so.zip"/><file name="任性直播keystore.rar" path="D:\workByme\workYstv\androidbase\src\main\assets\任性直播keystore.rar"/></source><source path="D:\workByme\workYstv\androidbase\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\workByme\workYstv\androidbase\src\debug\assets"/></dataSet></merger>

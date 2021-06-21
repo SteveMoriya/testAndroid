@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#77a3e4</color>
+    <color name="main_color_press">#4e6992</color>
+    <color name="statusbar_bg">#77a3e4</color>
+    <!-- 自定义listView -->
+    <color name="assist_black_font_color">#666666</color>
+    <!-- 蓝色-->
+    <color name="title_bg_pink_color">#77a3e4</color>
+    <color name="main_menu_font_color">#595959</color>
+    <color name="page_bg_color">#F0F0F0</color>
+    <color name="black_font_color">#1a1a1a</color>
+    <color name="disable_color">#D2D2D2</color>
+    <color name="light_font_color">#999999</color>
+    <color name="divider_color">#dcdcdc</color>
+    <color name="red_bg">#f15050</color>
+    <color name="red">#E71724</color>
+    <color name="red_thin">#E71724</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="qiangray">#999999</color>
+    <color name="addrgray">#b3b3b3</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="chengse">#f5ce0a</color>
+    <color name="text_home_fragment_titlehint">#EE757A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_white">#f6b7b7b2</color>
+    <color name="white_s">#ffffff</color>
+    <color name="tab_text_unselect">#808080</color>
+    <color name="text_dialog_button">#000000</color>
+    <color name="gray_bg">#F2F2F2</color>
+    <color name="text_black_444">#444444</color>
+    <color name="lucid">#00000000</color>
+    <color name="lucid_20">#30000000</color>
+    <color name="text_hint_color">#737373</color>
+    <color name="text_addr_back">#1A1A1A</color>
+    <color name="green">#30a46c</color>
+    <color name="green_s">#3ccf24</color>
+    <color name="pop_bg">#40000000</color>
+    <color name="hint_color">#aaaaaa</color>
+    <color name="touming_bg">#80000000</color>
+    <color name="linezw_color">#f5f5f5</color>
+    <color name="line_color">#eeeeee</color>
+
+    <color name="hint_gray">#aaaaaa</color>
+    <color name="name_color">#fefefe</color>
+    <!-- 粉色 -->
+    <color name="pink_color">#fa7397</color>
+
+    <color name="message_name">#7d7d7d</color>
+</resources>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:as="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/live_item_toDo"
+    android:background="@color/white_s">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="@dimen/pading">
+
+            <com.whcd.base.widget.RoundImageView
+                android:id="@+id/user_tx_itemlive"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_margin="@dimen/pading"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mrtx"
+                as:border_inside_color="@color/title_bg_pink_color"
+                as:border_inside_thickness="1dp"
+                as:border_outside_color="@color/title_bg_pink_color"
+                as:border_outside_thickness="1dp" />
+
+            <ImageView
+                android:layout_marginRight="@dimen/magin"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/isVipImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_home_v" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/user_name_itemlive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:text="医生姓名"
+                    android:textSize="@dimen/text_size15" />
+
+                <TextView
+                    android:id="@+id/user_zw_itemlive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(主治医师)"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/text_size10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/user_yiyuanm_itemlive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="医院名"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_size10" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_gmsl_itemlive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_size15" />
+
+        <TextView
+            android:id="@+id/ngk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/pading"
+            android:layout_marginRight="@dimen/pading"
+            android:background="@drawable/roundfh"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:text="妇科"
+            android:textColor="@color/white_s"
+            android:textSize="@dimen/text_size10" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        >
+        <ImageView
+            android:id="@+id/user_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/live_mrjz"/>
+
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            >
+
+
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:background="@color/touming_bg">
+
+
+
+                <TextView
+                    android:id="@+id/title_item_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pading"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@color/white_s"
+                    android:text="智慧营养与胎儿发育"
+                    android:textSize="@dimen/text_size15"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/open_time"
+                    android:textColor="@color/gray_white"
+                    android:layout_marginLeft="@dimen/pading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017.07.03  21:00"
+                    android:drawableLeft="@drawable/icon_clock"
+                    android:drawablePadding="5dp"
+                    android:textSize="@dimen/text_size10"
+                    />
+                <TextView
+                    android:id="@+id/rqz"
+                    android:textColor="@color/gray_white"
+                    android:layout_marginLeft="@dimen/pading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人气值: 18900"
+                    android:drawableLeft="@drawable/icon_hot"
+                    android:drawablePadding="5dp"
+                    android:textSize="@dimen/text_size10"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/live_price"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥20.00"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/white_s"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/live_todo"
+                android:layout_below="@+id/live_price"
+                android:id="@+id/live_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="复制推流地址"
+                android:background="@drawable/blue"
+                android:textSize="@dimen/text_size13"
+                android:textColor="@color/white_s"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/live_price"
+                android:id="@+id/live_todo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="立即支付"
+                android:background="@drawable/red"
+                android:textSize="@dimen/text_size13"
+                android:textColor="@color/white_s"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/live_price"
+                android:id="@+id/live_into"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="立即支付"
+                android:background="@drawable/blue"
+                android:textSize="@dimen/text_size13"
+                android:textColor="@color/white_s"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/live_what"
+            android:layout_margin="@dimen/pading"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/liveonline"
+            android:gravity="center"
+            android:textSize="@dimen/text_size13"
+            android:paddingLeft="@dimen/pading"
+            android:paddingRight="@dimen/pading"
+            android:background="@drawable/round3"/>
+       </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9.5dp"
+        android:background="@color/linezw_color"></View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_color"></View>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/title_bg_pink_color"
+    android:orientation="vertical" >
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></View>-->
+    <RelativeLayout style="@style/top_tab_bar" >
+
+        <Button
+            android:id="@+id/title_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/btn_back"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_font_size" />
+
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/top_tab_bar_title"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/title_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_font_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_color" />
+    </RelativeLayout>
+
+</LinearLayout>

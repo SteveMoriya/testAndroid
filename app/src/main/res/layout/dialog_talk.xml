@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/dialog_container"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_white_big_shape"
+        android:orientation="vertical" >
+
+        <!-- Content -->
+
+
+        <RelativeLayout
+            android:background="@drawable/bg_gray_top_rou"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/magin_s"
+            android:paddingLeft="@dimen/magin"
+            >
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/allread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="忽略未读"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/titleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="私信消息"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:id="@+id/cancel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/icon_cha_h_b"
+                    android:textColor="@color/black_deep"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <com.whcd.base.widget.PageListView
+            android:id="@+id/conversationListView"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="@null"
+            android:headerDividersEnabled="false"
+            android:footerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"></View>
+    </LinearLayout>
+
+</LinearLayout>

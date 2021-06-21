@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+         xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/anchorRlyt"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_circle">
+
+        <com.whcd.base.widget.RoundImageView
+            android:id="@+id/avatarImageVideo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_portrait"></com.whcd.base.widget.RoundImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/avatarImageVideo"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameImageVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="王琦教授"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:id="@+id/onLineNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size10" />
+        </LinearLayout>
+    </RelativeLayout>

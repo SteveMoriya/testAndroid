@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.wehang.ystv.fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.wehang.ystv.myappview.HomeViewPager
+        android:id="@+id/homeViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleBar" />
+
+
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_bg_pink_color">
+
+    <ImageView
+        android:id="@+id/searchImg"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:src="@drawable/icon_home_sousuo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/nearCT"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <CheckedTextView
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="直播"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_font_size" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/newCT"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <CheckedTextView
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="视频"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_font_size" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/hotCT"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <CheckedTextView
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="预告"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_font_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/indictorView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="#ffffff" />
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

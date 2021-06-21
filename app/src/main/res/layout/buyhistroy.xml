@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="210dp"
+    android:background="@drawable/tamkuang"
+    android:orientation="vertical" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+    <TextView
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="全部"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14" />
+
+
+    <TextView
+        android:id="@+id/waitpay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="待付款"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14" />
+
+    <TextView
+        android:id="@+id/waiuse"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="待使用"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14" />
+
+    <TextView
+        android:id="@+id/havedone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="已完成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14" />
+
+    <TextView
+        android:id="@+id/refund"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="退款"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14" />
+
+
+
+
+</LinearLayout>

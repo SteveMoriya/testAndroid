@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        //配合限制方法输一起使用
+        multiDexEnabled true
+        applicationId "com.wehang.ystv"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters "armeabi", "armeabi-v7a"
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "76a93df0f367df97e298fdb5", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+    }
+    //在android.signingConfigs{}下定义一个或者多个签名信息
+    signingConfigs {
+        debug {
+            storeFile file(DEBUG_STORE_FILE)
+            storePassword DEBUG_STORE_PASSWORD
+            keyAlias DEBUG_KEY_ALIAS
+            keyPassword DEBUG_KEY_PASSWORD
+        }
+        release {
+            storeFile file(RELEASE_STORE_FILE)
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+            // 满足下面两个条件时需要此配置
+            // 1. Gradle版本 >= 2.14.1
+            // 2. Android Gradle Plugin 版本 >= 2.2.0
+            // 作用是只使用旧版签名，禁用V2版签名模式
+            v2SigningEnabled false
+        }
+    }
+
+    //Error:Execution failed for task ':app:mergeDebugResources'. > Error: Some file crunching failed, see logs for details
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    /*限制方法数*/
+    dexOptions {
+        jumboMode true
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //导入腾讯相关.jar包和.so
+    compile fileTree(include: ['*.jar'], dir: 'src/main/jniLibs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':txlibrary')
+    //水波纹view
+    compile files('libs/butterknife-7.0.1.jar')
+    //极光推送
+    // 此处以JPush 3.0.8 版本为例。
+    // 此处以JCore 1.1.6 版本为例。
+    compile files('libs/bugly_crash_release.jar')
+    compile files('libs/libpingpp-2.1.3.jar')
+    compile files('libs/alipaySdk-20161129.jar')
+    compile files('libs/ormlite-android-4.48.jar')
+    compile files('libs/ormlite-core-4.48.jar')
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:support-v4:26.+'
+    compile 'com.blankj:utilcode:1.7.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'cn.jiguang.sdk:jpush:3.0.8'
+    compile 'cn.jiguang.sdk:jcore:1.1.6'
+    compile 'pub.devrel:easypermissions:0.4.2'
+    testCompile 'junit:junit:4.12'
+}

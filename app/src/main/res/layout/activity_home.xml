@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_root_layout"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="com.wehang.ystv.ui.HomeActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:background="@drawable/tab_bg"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_gravity="bottom"
+            >
+
+
+            <RelativeLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom">
+
+
+                <RadioGroup
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/homeLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/select_tab_home"
+                        android:gravity="center"
+                        android:text="首页"
+                        android:textColor="@drawable/tab_text_select"
+                        android:textSize="13sp" />
+
+
+                    <RadioButton
+                        android:id="@+id/DymamicLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/select_tab_dynamic"
+                        android:gravity="center"
+                        android:text="动态"
+                        android:textColor="@drawable/tab_text_select"
+                        android:textSize="13sp" />
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        >
+
+
+                    </FrameLayout>
+                    <RadioButton
+                        android:id="@+id/MessageLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/select_tab_message"
+                        android:gravity="center"
+                        android:text="消息"
+                        android:textColor="@drawable/tab_text_select"
+                        android:textSize="13sp" />
+                    <RadioButton
+                        android:id="@+id/myLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/select_tab_usercenter"
+                        android:gravity="center"
+                        android:text="个人中心"
+                        android:textColor="@drawable/tab_text_select"
+                        android:textSize="13sp" />
+                </RadioGroup>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="6dp">
+                <ImageView
+                    android:id="@+id/liveImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_zhibo_h"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+
+
+</FrameLayout>
+</FrameLayout>

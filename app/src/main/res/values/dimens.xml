@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- umeng -->
+    <dimen name="titlebar">54dp</dimen>
+    <!--直播竖屏多高-->
+    <dimen name="vedio_hight">230dp</dimen>
+
+    <dimen name="magin">10dp</dimen>
+    <dimen name="magin_s">5dp</dimen>
+    <dimen name="icon_wh">38dp</dimen>
+</resources>

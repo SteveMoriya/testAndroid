@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop_conent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/item_chose_live"
+            android:layout_height="45dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/b_cancel"
+                android:textColor="@color/gray_pressed"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size15"
+                android:text="取消"/>
+            <TextView
+                android:id="@+id/title_pop"
+                android:textColor="@color/main_menu_font_color"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size15"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择所属分类"/>
+            <TextView
+                android:id="@+id/b_sure"
+                android:textColor="@color/red_bg"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="@dimen/text_size15"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"/>
+        </RelativeLayout>
+        <View style="@style/light_divider_line"
+            android:layout_marginLeft="@dimen/magin"
+            android:layout_marginRight="@dimen/magin"></View>
+        <LinearLayout
+            android:id="@+id/item_chose_qx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <com.wehang.ystv.myappview.PickerView
+                android:id="@+id/belong_pv"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp" />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"></View>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_face_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:background="@color/white"
+        android:paddingTop="7dp">
+
+        <com.wehang.ystv.widget.VideoGiftsView
+            android:id="@+id/giftsPagerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomTools" />
+
+        <RelativeLayout
+            android:id="@+id/bottomTools"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#f5f5f5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/chargeLlyt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="充值："
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/big_font_size" />
+
+                <TextView
+                    android:id="@+id/leftDiamondTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/ic_diamond"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/big_font_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_rightarrow_blue" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sendTv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/main_color"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_font_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

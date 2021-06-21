@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical">
+
+    <com.whcd.base.widget.TopMenuBar
+        android:id="@+id/topMenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_comment"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="@dimen/text_size14"
+        android:textSize="@dimen/text_size15"
+        android:maxLength="450"
+        android:hint="填写您的意见或建议"
+        android:textColorHint="@color/assist_black_font_color"
+        android:textColor="@color/black_deep"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/comitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bg_edit_blue_b"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_font_size" />
+    <!-- <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="205dp"
+           android:gravity="center"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_safe" />
+
+           <TextView
+               android:id="@+id/safeTv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="20dp"
+               android:text="安全等级：低"
+               android:textSize="@dimen/big_font_size" />
+
+           <TextView
+               android:id="@+id/tipTv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="通过以下设置可以提高安全等级"
+               android:textColor="@color/deep_gray"
+               android:textSize="@dimen/normal_font2_size" />
+       </LinearLayout>
+
+       <View style="@style/light_divider_line" />
+
+       <RelativeLayout
+           android:id="@+id/bindPhoneView"
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:background="@color/white">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="10dp"
+               android:drawableLeft="@drawable/ic_phone"
+               android:drawablePadding="10dp"
+               android:gravity="center_vertical"
+               android:text="手机绑定"
+               android:textSize="@dimen/normal_font_size" />
+
+           <TextView
+               android:id="@+id/bindPhoneTv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="10dp"
+               android:drawablePadding="10dp"
+               android:drawableRight="@drawable/ic_rightarrow"
+               android:text="未绑定"
+               android:textColor="@color/addrgray"
+               android:textSize="@dimen/normal_font_size" />
+       </RelativeLayout>
+
+       <View style="@style/light_divider_line" />
+
+       <RelativeLayout
+           android:id="@+id/identifyView"
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:background="@color/white"
+           android:visibility="gone">
+
+           <ImageView
+               android:id="@+id/iconimg"
+               android:layout_width="12dp"
+               android:layout_height="12dp"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="10dp"
+               android:scaleType="centerInside"
+               android:src="@drawable/icon_authentication" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="10dp"
+               android:layout_toRightOf="@+id/iconimg"
+               android:text="实名认证"
+               android:textSize="@dimen/normal_font_size" />
+
+           <TextView
+               android:id="@+id/identifyTv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="10dp"
+               android:drawablePadding="10dp"
+               android:drawableRight="@drawable/ic_rightarrow"
+               android:text="未绑定"
+               android:textColor="@color/addrgray"
+               android:textSize="@dimen/normal_font_size" />&ndash;&gt;
+       </RelativeLayout>-->
+
+</LinearLayout>

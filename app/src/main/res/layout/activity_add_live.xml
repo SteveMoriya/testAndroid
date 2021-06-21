@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_bg_1"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:id="@+id/zb_line"
+    android:orientation="vertical"
+
+    tools:context="com.wehang.ystv.ui.AddLiveActivity">
+    <com.whcd.base.widget.TopMenuBar
+        android:id="@+id/topMenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="2dp"
+                   android:layout_weight="1"/>
+               <ImageView
+                   android:layout_marginBottom="30dp"
+                   android:id="@+id/btnClose"
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:layout_gravity="right"
+                   android:layout_marginRight="15dp"
+                   android:src="@drawable/icon_chacha_1" />
+
+           </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="152dp">
+
+                <ImageView
+                    android:background="@drawable/round_corners"
+                    android:id="@+id/zb_fmImg"
+                    android:layout_width="220dp"
+                    android:layout_height="152dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic_szfm"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/addTs"
+                    android:layout_width="218dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/live_botom_stroke"
+                    android:gravity="center"
+                    android:text="设置封面"
+                    android:textColor="@color/white_s"
+                    android:textStyle="bold" />
+
+                <com.wehang.ystv.myappview.XCRoundRectImageView
+                    android:layout_width="220dp"
+                    android:layout_height="152dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/live_mrjz"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="158dp"
+                android:layout_height="53dp">
+
+                <EditText
+                    android:id="@+id/titleEdt"
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:hint="直播标题"
+
+                    android:imeOptions="actionDone"
+                    android:maxLength="15"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_size16" />
+            </RelativeLayout>
+
+
+            <View
+                style="@style/light_divider_line"
+                android:layout_width="158dp"
+                android:layout_height="0.5dp"></View>
+
+            <RelativeLayout
+                android:layout_width="158dp"
+                android:layout_height="53dp"
+                android:id="@+id/belong_r">
+
+                <TextView
+                    android:id="@+id/belong_what"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:hint="所属分类"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:maxLength="20"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_size16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/magin"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/belong_what"
+                    android:gravity="bottom"
+                    android:hint="所属分类"
+                    android:src="@drawable/fenlei_jian" />
+            </RelativeLayout>
+
+            <View
+                style="@style/light_divider_line"
+                android:layout_width="158dp"
+                android:layout_height="0.5dp"></View>
+
+            <RelativeLayout
+                android:layout_width="158dp"
+                android:layout_height="53dp"
+                android:id="@+id/time_r">
+
+                <TextView
+                    android:id="@+id/begin_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:hint="开始时间"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:maxLength="20"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_size16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/magin"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/begin_time"
+                    android:gravity="bottom"
+                    android:src="@drawable/fenlei_jian" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/time_Line"
+                style="@style/light_divider_line"
+                android:layout_width="158dp"
+                android:layout_height="0.5dp"></View>
+
+            <RelativeLayout
+                android:layout_width="158dp"
+                android:layout_height="53dp"
+                android:id="@+id/kejianChose_r">
+
+                <TextView
+                    android:id="@+id/kejian_chose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:hint="课件选择"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:maxLength="20"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_size16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/magin"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/kejian_chose"
+                    android:gravity="bottom"
+                    android:src="@drawable/icon_xuankejian" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/kj_line"
+                style="@style/light_divider_line"
+                android:layout_width="158dp"
+                android:layout_height="0.5dp"></View>
+
+            <RelativeLayout
+                android:layout_width="158dp"
+                android:layout_height="53dp"
+               >
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/rmb_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_size16"
+                    android:text="￥"/>
+                <EditText
+                    android:id="@+id/priceEdt"
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:hint="价格"
+                    android:paddingLeft="@dimen/magin"
+                    android:paddingRight="@dimen/magin"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:maxLength="20"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_size16" />
+            </RelativeLayout>
+
+
+            <View
+                style="@style/light_divider_line"
+                android:layout_width="158dp"
+                android:layout_height="0.5dp"></View>
+
+          <!--  <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="53dp"
+                android:minWidth="158dp"
+                >
+
+
+
+            </RelativeLayout>-->
+            <EditText
+                android:id="@+id/kecheng_brife"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:focusable="true"
+                android:hint="课程简介"
+                android:imeOptions="actionDone"
+                android:paddingBottom="10dp"
+                android:paddingTop="22dp"
+                android:maxLength="150"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="@dimen/magin"
+                android:layout_marginLeft="@dimen/magin"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/text_size16" />
+            <View
+                android:id="@+id/kejian_line"
+                style="@style/light_divider_line"
+                android:layout_width="158dp"
+                android:minWidth="158dp"
+                android:layout_marginRight="@dimen/magin"
+                android:layout_marginLeft="@dimen/magin"
+                android:layout_height="0.5dp"></View>
+
+
+
+            <TextView
+                android:id="@+id/addliveTV"
+                android:layout_width="197dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="65dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/bg_edit_white"
+                android:gravity="center"
+                android:text="创 建"
+                android:textColor="@color/white_s"
+                android:textSize="@dimen/text_size15" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

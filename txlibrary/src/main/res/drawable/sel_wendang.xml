@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/gbwendang" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/wendang"></item>
+    <item android:drawable="@drawable/gbwendang" android:state_checked="true"></item>
+    <item android:drawable="@drawable/gbwendang" android:state_checkable="true"></item>
+    <item android:drawable="@drawable/gbwendang" android:state_selected="true"></item>
+</selector>

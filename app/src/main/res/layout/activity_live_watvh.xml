@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/watchmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8c6c2"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/contioner_r"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/videohight">
+        <!--播放视频-->
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/leaveRlyt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_bg02"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/leaveTv"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/camera"
+                android:gravity="center_horizontal"
+                android:text="请稍等，主播暂时离开，马上回来~"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/anchor_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_bg02" />
+
+
+        <com.wehang.txlibrary.widget.MyViewPager
+            android:id="@+id/operationViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.wehang.txlibrary.widget.MyViewPager>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ltRoom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <CheckedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="聊天室"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="@dimen/title_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/twRoom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <CheckedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="提问"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="@dimen/title_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/indictorView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/main_color" />
+        </RelativeLayout>
+
+        <com.wehang.txlibrary.widget.MyViewPager
+            android:id="@+id/watvhViewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></com.wehang.txlibrary.widget.MyViewPager>
+    </LinearLayout>
+</LinearLayout>

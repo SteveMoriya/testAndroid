@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/watchmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8c6c2"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/contioner_r"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/videohight">
+        <!--播放视频-->
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/leaveRlyt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_bg02"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/leaveTv"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/camera"
+                android:gravity="center_horizontal"
+                android:text="请稍等，主播暂时离开，马上回来~"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/anchor_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_bg02" />
+            <TextView
+                android:id="@+id/jzTs"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white_s"
+                android:text="努力加载中..."
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/wksRly"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/kcName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="直播名称"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/kcTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="距离开播还有7小时"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/kjRly"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.wehang.ystv.widget.IndexViewPager
+                android:id="@+id/classViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></com.wehang.ystv.widget.IndexViewPager>
+
+        </RelativeLayout>
+        <!--连麦相关-->
+        <FrameLayout
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="80dp">
+
+            <com.tencent.rtmp.ui.TXCloudVideoView
+                android:id="@+id/small_video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/linkmic_loading_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:background="@android:color/black"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/linkmic_loading"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </FrameLayout>
+        <com.wehang.txlibrary.widget.MyViewPager
+            android:id="@+id/operationViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.wehang.txlibrary.widget.MyViewPager>
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingRight="@dimen/magin"
+        android:paddingLeft="@dimen/magin"
+        android:layout_below="@+id/contioner_r"
+        android:id="@+id/gzRyl"
+        android:background="@color/white_s"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/liveTitle"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="13dp"
+                android:layout_marginTop="4dp"
+                android:id="@+id/onlineWhatchNumeber"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black_s"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:gravity="center_vertical"
+           android:layout_alignParentRight="true">
+
+           <LinearLayout
+               android:id="@+id/whachLyt1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginRight="5dp"
+               android:gravity="center_horizontal">
+               <ImageView
+                   android:layout_centerVertical="true"
+                   android:id="@+id/whatch_like"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/icon_shoucang_1" />
+               <TextView
+                   android:layout_marginTop="5dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="收藏"
+                   android:textSize="13dp"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/whachLyt2"
+               android:layout_toRightOf="@id/whachLyt1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginRight="5dp"
+               android:gravity="center_horizontal"
+               >
+               <ImageView
+                   android:id="@+id/whatch_xiaoxi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/icon_sixin_1"
+                   android:layout_toRightOf="@id/whatch_like"/>
+               <TextView
+                   android:layout_marginTop="5dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="私信"
+                   android:textSize="13dp"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/whachLyt3"
+               android:layout_toRightOf="@id/whachLyt2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:gravity="center_horizontal">
+               <ImageView
+                   android:layout_centerVertical="true"
+                   android:id="@+id/whatch_share"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/icon_fenxiang_1" />
+               <TextView
+                   android:layout_marginTop="5dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="分享"
+                   android:textSize="13dp"
+                   />
+           </LinearLayout>
+
+
+
+
+       </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/gzRyl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white_s">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ltRoom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <CheckedTextView
+                        android:id="@+id/tab_online"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="聊天室"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="@dimen/title_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/twRoom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <CheckedTextView
+                        android:id="@+id/tab_twTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="提问"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="@dimen/title_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/indictorView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/main_color" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color"></View>
+
+        <com.wehang.txlibrary.widget.MyViewPager
+            android:id="@+id/watvhViewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.wehang.txlibrary.widget.MyViewPager>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="6.5dp"
+            android:background="@color/line_color"></View>
+    </LinearLayout>
+
+<ImageView
+    android:visibility="gone"
+    android:id="@+id/WhatBigImg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:scaleType="fitCenter"
+    android:src="@drawable/live_mrjz"/>
+
+    <FrameLayout
+        android:id="@+id/myshare"
+        android:visibility="gone"
+        android:background="#b0000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:as="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:minHeight="50dp"
+    android:paddingRight="@dimen/pading"
+    android:paddingLeft="@dimen/pading">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/searchTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="搜索历史"
+            android:textSize="15dp"/>
+        <LinearLayout
+            android:id="@+id/searchDelete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"></View>
+            <ImageView
+
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/icon_cha_h_b"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#e0e0e0" />
+
+</RelativeLayout>

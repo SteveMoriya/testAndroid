@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+    <!--弹幕显示的地方-->
+    <ListView
+        android:layout_marginTop="@dimen/magin"
+        android:divider="@color/background"
+        android:dividerHeight="@dimen/magin"
+        android:paddingRight="@dimen/magin"
+        android:paddingLeft="@dimen/magin"
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+    <TextView
+        android:id="@+id/gzTw"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="提问"
+        android:gravity="center"
+        android:background="@color/main_color"
+        android:textSize="@dimen/text_size17"
+        android:textColor="@color/white_s"/>
+</LinearLayout>

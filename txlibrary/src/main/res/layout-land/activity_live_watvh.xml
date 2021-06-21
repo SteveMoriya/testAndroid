@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/watchmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8c6c2"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/contioner_r"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--播放视频-->
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+        <!--操作层-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+            <!--被隐藏的view-->
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/showback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/back_press" />
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:id="@+id/Animation_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true">
+                    <include layout="@layout/userhead"/>
+                </LinearLayout>
+
+
+
+
+                <android.support.design.widget.CheckableImageButton
+                    android:id="@+id/lock_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:background="@null"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/shangsuo"
+                    android:layout_toLeftOf="@+id/whatch_kj"/>
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/whatch_kj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/wendang"
+                    android:layout_toLeftOf="@+id/whatch_lianmai"/>
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/whatch_lianmai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/whatch_like"
+                    android:src="@drawable/jushouj" />
+
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/whatch_like"
+                    android:layout_toLeftOf="@+id/whatch_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/like" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/whatch_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/showbig"
+                    android:src="@drawable/share" />
+
+                <ImageView
+                    android:id="@+id/showbig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/suofang" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Animation_btm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/whatch_xiaoxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/xiaoxi"
+                    android:layout_marginBottom="10dp"
+                    android:layout_above="@+id/whatch_duihua"
+                    />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/whatch_duihua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/duihua"
+                    android:layout_marginBottom="10dp"
+                    android:layout_above="@+id/whatch_wenti"
+                    />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/whatch_wenti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wenti"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ltRoom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <CheckedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="聊天室"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="@dimen/title_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/twRoom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <CheckedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="提问"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="@dimen/title_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/indictorView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/main_color" />
+        </RelativeLayout>
+
+        <com.wehang.txlibrary.widget.MyViewPager
+            android:id="@+id/watvhViewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></com.wehang.txlibrary.widget.MyViewPager>
+    </LinearLayout>
+
+
+</LinearLayout>

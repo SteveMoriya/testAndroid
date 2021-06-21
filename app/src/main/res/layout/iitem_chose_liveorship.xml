@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:id="@+id/pop_conent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+           >
+            <LinearLayout
+
+                android:id="@+id/item_chose_live"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/zhibo"/>
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size13"
+                    android:text="发布直播"
+                    android:textColor="@color/gray_pressed"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/item_chose_pre"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/shipin"/>
+                <TextView
+                    android:id="@+id/item_chose_prTV"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size13"
+                    android:text="发布视频"
+                    android:textColor="@color/gray_pressed"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/light_divider_line"
+            android:visibility="gone"></View>
+        <LinearLayout
+            android:id="@+id/item_chose_qx"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/icon_cha_h"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

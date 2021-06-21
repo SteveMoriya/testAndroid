@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/page_bg_color"
+    android:orientation="vertical" >
+
+    <com.whcd.base.widget.TopMenuBar
+        android:id="@+id/top_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/photo_grid_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.0"
+        android:cacheColorHint="@android:color/transparent"
+        android:clipToPadding="false"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:padding="5dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/bottom_tool_bar"
+            style="@style/bottom_tab_bar" >
+
+            <Button
+                android:id="@+id/preview_button"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/selector_green_empty_corner_bg"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="预览"
+                android:textColor="@color/skin_green_btn"
+                android:textSize="@dimen/normal_font_size" />
+
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_green_empty_corner_bg"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/skin_green_btn"
+                android:textSize="@dimen/normal_font_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

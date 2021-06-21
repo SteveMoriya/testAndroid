@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white_s"
+    android:orientation="vertical"
+    >
+
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:gravity="center_vertical">
+       <TextView
+           android:layout_marginLeft="@dimen/magin"
+           android:id="@+id/kejian_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="课件名称"
+           android:textSize="14dp"
+           android:textColor="@color/black_s"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></View>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="使用"
+           android:paddingRight="@dimen/magin"
+           android:paddingLeft="@dimen/magin"
+           android:paddingTop="4dp"
+           android:paddingBottom="4dp"
+           android:layout_marginRight="@dimen/magin"
+           android:textSize="12dp"
+           android:background="@drawable/bg_edit_blue_ss"/>
+   </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginRight="@dimen/magin"
+        android:layout_marginLeft="@dimen/magin"
+        android:background="@color/line_color"></View>
+</LinearLayout>

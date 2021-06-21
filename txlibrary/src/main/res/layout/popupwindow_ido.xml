@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:background="@drawable/img_live_panel"
+              android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <CheckBox
+        android:id="@+id/cbCameraLight"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="true"
+        android:drawableLeft="@drawable/chekbox_light"
+        android:drawablePadding="5dp"
+        android:paddingLeft="15dp"
+        android:text="开闪光"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14"/>
+
+    <TextView
+        android:id="@+id/cbCameraTurnover"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_camera_turnover"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="翻转"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14"/>
+
+    <CheckBox
+        android:id="@+id/cbCameraMagictool"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="true"
+        android:drawableLeft="@drawable/ic_camera_magictool"
+        android:drawablePadding="5dp"
+        android:paddingLeft="15dp"
+        android:text="关美颜"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14"/>
+
+
+
+</LinearLayout>

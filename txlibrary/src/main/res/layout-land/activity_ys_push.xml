@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wehang.txlibrary.ui.fragment.YsPushActivity">
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <!--操作层-->
+    <RelativeLayout
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <!--被隐藏的view-->
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/showback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/back_press" />
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/Animation_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+                <include layout="@layout/userhead"/>
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_bt_switch_camera"
+                android:layout_toLeftOf="@id/whatch_kj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/shanguan" />
+
+            <android.support.design.widget.CheckableImageButton
+                android:layout_centerVertical="true"
+                android:id="@+id/whatch_kj"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/sel_wendang"
+                android:layout_toLeftOf="@+id/whatch_share"/>
+
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/whatch_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/push_stop"
+                android:src="@drawable/share" />
+
+            <ImageView
+                android:id="@+id/push_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/push_stop" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Animation_btm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            >
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/whatch_lianmai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_above="@+id/whatch_xiaoxi"
+                android:src="@drawable/lianmai" />
+
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/whatch_xiaoxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xiaoxi"
+                android:layout_marginBottom="10dp"
+                android:layout_above="@+id/whatch_duihua"
+                />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/whatch_duihua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/duihua"
+                android:layout_marginBottom="10dp"
+                android:layout_above="@+id/whatch_wenti"
+                />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/whatch_wenti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wenti"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <!--蒙层-->
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/push_mc"
+        android:background="@drawable/img_bg02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+    <TextView
+        android:id="@+id/countdown_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="3"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:textSize="136.0sp"
+        android:textStyle="bold"/>
+</RelativeLayout>

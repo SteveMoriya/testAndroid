@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LivePushActivity">
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/video_view"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_message_input"
+            android:layout_width="@dimen/live_btn_size"
+            android:layout_height="@dimen/live_btn_size"
+            android:background="@drawable/icon_message"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/flash_btn"
+            android:layout_width="@dimen/live_btn_size"
+            android:layout_height="@dimen/live_btn_size"
+            android:background="@drawable/icon_flash"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/switch_cam"
+            android:layout_width="@dimen/live_btn_size"
+            android:layout_height="@dimen/live_btn_size"
+            android:background="@drawable/icon_switch_camera_on"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/beauty_btn"
+            android:layout_width="@dimen/live_btn_size"
+            android:layout_height="@dimen/live_btn_size"
+            android:background="@drawable/icon_beauty_drawable"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:id="@+id/view_margin_audio_ctrl"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_audio_ctrl"
+            android:layout_width="@dimen/live_btn_size"
+            android:layout_height="@dimen/live_btn_size"
+            android:background="@drawable/music_big"
+            android:onClick="onClick"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_width="@dimen/live_btn_size"
+            android:layout_height="@dimen/live_btn_size"
+            android:background="@drawable/icon_log_off"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/live_btn_size"
+            android:layout_height="@dimen/live_btn_size"
+            android:background="@drawable/btn_close"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:id="@+id/audio_plugin"
+        android:visibility="gone">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:text="音效"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btn_audio_effect"
+            android:onClick="onClick"
+            android:background="@drawable/shape_round_button"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:text="结束"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:id="@+id/btn_audio_close"
+            android:onClick="onClick"
+            android:background="@drawable/shape_round_button"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+</RelativeLayout>

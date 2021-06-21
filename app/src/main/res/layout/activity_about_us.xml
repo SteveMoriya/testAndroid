@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg_color"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:gravity="center_horizontal">
+
+    <com.whcd.base.widget.TopMenuBar
+        android:id="@+id/topMenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<!--    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="20dp"
+        android:background="#dbdbdb" />
+
+    <TextView
+        android:id="@+id/communityConventionTv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="社区公约"
+        android:textColor="@color/black_font_color"
+        android:textSize="@dimen/normal_font_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb" />
+
+    <TextView
+        android:id="@+id/privacyPolicyTv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="隐私政策"
+        android:textColor="@color/black_font_color"
+        android:textSize="@dimen/normal_font_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb" />
+
+    <TextView
+        android:id="@+id/contactTv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="联系我们"
+        android:textColor="@color/black_font_color"
+        android:textSize="@dimen/normal_font_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb" />-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:src="@drawable/app192"/>
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:text="@string/app_name"/>
+            <TextView
+                android:id="@+id/tv_vision_code"
+                android:layout_marginLeft="@dimen/pading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:text="V1.0"/>
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"></View>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_gravity="bottom"
+                android:id="@+id/termsOfServiceTv"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="《服务条款》"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/normal_font_size" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#999999"
+                android:layout_height="wrap_content"
+                android:text="Copyright@2017."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#999999"
+                android:layout_height="wrap_content"
+                android:text="All Rights Reserved"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

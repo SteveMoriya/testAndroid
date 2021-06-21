@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_s"
+    tools:context="com.wehang.ystv.fragment.MessageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_bg_pink_color">
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="消息中心"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_font_size"
+            android:id="@+id/textView5" />
+        <TextView
+            android:id="@+id/isReadTV"
+            android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:text="忽略未读"
+            android:layout_marginRight="@dimen/magin"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:background="@drawable/btn_read"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="11dp" />
+    </RelativeLayout>
+    <com.whcd.base.widget.PageListView
+        android:id="@+id/conversationListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="@null"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        />
+    <!--<ListView
+        android:id="@+id/conversationListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+</LinearLayout>

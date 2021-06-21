@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:minHeight="60dp"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+        <!--com.wehang.ystv.myappview.XCRoundRectImageView-->
+        <ImageView
+            android:id="@+id/vedioImg"
+            android:scaleType="centerCrop"
+            android:src="@drawable/live_mrjz"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/magin"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="陪你一起看流星雨"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size12" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1小时前"
+            android:textColor="@color/assist_black_font_color"
+            android:textSize="@dimen/small_font_size" />
+
+        <TextView
+            android:id="@+id/mentionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="看过"
+            android:textColor="@color/assist_black_font_color"
+            android:textSize="@dimen/small_font_size" />
+
+        <TextView
+            android:id="@+id/lookNumTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/mentionTv"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/mentionTv"
+            android:text="3.2万"
+            android:textColor="#6084c9"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

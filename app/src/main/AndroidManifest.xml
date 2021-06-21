@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wehang.ystv">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- TIM NEED -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <!-- TIM end -->
+    <application
+        android:name=".VideoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeMy">
+        <activity android:name=".yscc" />
+        <activity android:name=".ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--<activity android:name="com.wehang.txlibrary.LivePushActivity">
+
+        </activity>-->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ForgetPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RegistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PerfectDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LiveDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.NbOfParticipants"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AddLiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AddVedioActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 相册 -->
+        <activity
+            android:name="com.whcd.base.activity.AlbumActivity"
+            android:screenOrientation="portrait" />
+        <!-- 缩放图片 -->
+        <activity
+            android:name="com.whcd.base.activity.CropImageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 相册图片 -->
+        <activity
+            android:name="com.whcd.base.activity.AlbumPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.KeJianActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SysTemMessageActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.GetQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.GetAnswerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UserHomeActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ConcernActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UpDataNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UpDataSexActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UpDataSignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.BdphoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WallteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.TransactionRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UpgradeVipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RealNameCertificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MyQusetionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.BuyHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.BuyDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ApplyForRefundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AboutUsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AboutDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ForgetPwActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ImagePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.MyVideoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.LiveWatvhActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.VideoDetails"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".ui.LiveWatchNewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".ui.LivePushActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <!-- 提问 -->
+        <activity
+            android:name=".ui.AddQuseTionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AnswerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ZdyActivity"
+            android:screenOrientation="portrait" />
+        <!-- jpush start -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":multiprocess"
+            tools:node="replace" />
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <receiver
+            android:name=".receiver.JPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.wehang.ystv" />
+            </intent-filter>
+        </receiver>
+        <!-- Jpush end -->
+
+
+        <!-- TIM start -->
+        <!-- 消息收发service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalService"
+            android:exported="false"
+            android:process=":QALSERVICE" />
+        <!-- 消息收发辅助service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalAssistService"
+            android:exported="false"
+            android:process=":QALSERVICE" />
+        <!-- 离线消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.QALBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.tencent.qalsdk.broadcast.qal" />
+            </intent-filter>
+        </receiver>
+        <!-- 系统消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.core.NetConnInfoCenter"
+            android:process=":QALSERVICE">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- TIM END -->
+        <!-- ****************友盟分享、登录配置START********************* -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5992c09545297d74110009ad" />
+
+        <!-- 微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 新浪 -->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" />
+
+        <!-- qq空间 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106141815" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- ****************友盟分享、登录配置END********************* -->
+
+
+        <!-- 微信支付START -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:theme="@style/DefaultFullScreenDialogAnimation"
+            />
+
+        <receiver android:name=".receiver.WxAppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- 微信支付END -->
+        <!-- 支付宝 START -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- 支付宝 END -->
+
+
+        <!-- 解决7.0读取拍照 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".ui.UpHelpActivity"></activity>
+    </application>
+
+</manifest>

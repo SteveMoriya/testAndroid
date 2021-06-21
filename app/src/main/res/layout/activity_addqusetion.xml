@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:id="@+id/root_layout"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <com.whcd.base.widget.TopMenuBar
+        android:id="@+id/topMenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/divider_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/signEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:textColor="@color/main_color"
+            android:textSize="12dp"
+            android:background="@null"
+            android:maxLength="150"
+            android:maxHeight="100dp"
+            android:minHeight="100dp"
+            android:padding="10dp"
+            android:hint="请点此输入文字"
+            />
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <com.wehang.ystv.widget.NotScrollGridView
+                android:visibility="visible"
+                android:id="@+id/imageGridView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:cacheColorHint="@android:color/transparent"
+                android:clipToPadding="false"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:horizontalSpacing="8dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:stretchMode="none"
+                android:verticalSpacing="15dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tipTv"
+            android:textSize="@dimen/normal_font_size"
+            android:lines="1"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="@dimen/magin"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_height="30dp"
+            android:textColor="@color/deep_gray"
+            android:text="0/150" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_color" />
+
+</LinearLayout>

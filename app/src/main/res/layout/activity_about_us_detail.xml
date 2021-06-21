@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical" >
+
+    <com.whcd.base.widget.TopMenuBar
+        android:id="@+id/topMenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="5dp"
+            android:lineSpacingMultiplier="1"
+            android:paddingBottom="10dp"
+            android:text="任性直播是由北京来前程科技有限公司开发的一款移动社交视频直播平台。致力于打造全民视频社交应用。任性直播吸取和延续互联网的优势，利用视讯方式进行现场直播。突破了传统直播在人群、地域、时间、设备等方面的限制，提高了直播的灵活性与便利性，做到了实时互动直播。\n\n任性直播是一款覆盖了iPhone、Android、iPad等系统的社交视频直播软件。与微博、微信、腾讯等账户相关联，用户只需拿出手机，简单注册，就能瞬间开启直播。同样，全平台用户也可以随时随地观看直播。同时可以通过分享到朋友圈，微博，微信，邀请好友观看等方式开启全民直播模式。 \n\n任性直播的特色：\n\n操作简单\n\n一键下载、一键直播\n一键关注、告别繁琐\n\n实时分享\n随时随地开直播、分享精彩\n随时随地看直播、告别延时\n\n即时互动\n便捷聊天、轻松互动\n私信一下、拉近距离\n\n内容丰富\n专题直播、内容丰富\n高清画质、精彩回放\n\n新意礼物\n缤纷点亮、关注主播\n豪华礼物、表达爱意\n\n绿色健康\n24小时网警在线巡查\n创造健康绿色直播环境\n\n任性直播的优势：\n来作为一款能够实现全民直播的手机软件，提供一个完全公平的平台，不签约主播，不外聘网红主播，创造一个人人都能实现主播梦想的平台。\n\n来设置有专题直播，内容更丰富更有看点，涵盖了娱乐、财经、体育、文化、旅游、美食等全方位的视频直播，让直播更有深度和内涵。"
+            android:textColor="@color/black_font_color"
+            android:textSize="@dimen/normal_font_size" />
+    </ScrollView>
+
+</LinearLayout>

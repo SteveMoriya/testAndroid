@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/page_bg_color"
+    android:orientation="vertical" >
+
+    <com.whcd.base.widget.TopMenuBar
+        android:id="@+id/top_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666" />
+
+    <LinearLayout
+        android:id="@+id/album_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/page_bg_color"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/album_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/divider_color"
+            android:dividerHeight="0.5dp"
+            android:headerDividersEnabled="true"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color" />
+    </LinearLayout>
+
+</LinearLayout>

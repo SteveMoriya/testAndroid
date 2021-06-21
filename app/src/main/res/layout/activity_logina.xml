@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@drawable/bg"
+    tools:context="com.wehang.ystv.ui.LoginActivity">
+
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="25dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ysloginlogo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_edit_white"
+        android:gravity="center_vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="11dp"
+            android:layout_height="16dp"
+            android:src="@drawable/icon_phone"
+            />
+        <EditText
+            android:id="@+id/login_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:hint="请输入手机号"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:maxLength="11"
+            android:textSize="@dimen/text_size15"
+            android:textColorHint="@color/white_s"
+            android:padding="10dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_edit_white"
+        android:gravity="center_vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="11dp"
+            android:layout_height="16dp"
+            android:src="@drawable/icon_clock_suo"
+            />
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:hint="请输入密码"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textSize="@dimen/text_size15"
+            android:textColorHint="@color/white_s"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_confirmTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/bg_red_solid2"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:text="登  录"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/text_size16" />
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pidding_bz"
+        android:orientation="horizontal">
+
+        <TextView
+            android:drawableLeft="@drawable/icon_wenhao"
+            android:drawablePadding="5dp"
+            android:id="@+id/forgetPasswordTV"
+            android:gravity="center_vertical"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="忘记密码"
+            android:textColor="@color/white_s"
+            android:textSize="13dp"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"></View>
+        <TextView
+            android:id="@+id/registTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textColor="@color/white_s"
+            android:textSize="13dp"
+            />
+    </LinearLayout>
+</LinearLayout>
